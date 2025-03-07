@@ -52,3 +52,33 @@ fetch('education.json')
     });
   })
   .catch(error => console.error("Error fetching data:", error));
+
+//   fetch Projects
+
+fetch('projects.json')
+  .then(res => res.json())
+  .then(data => {
+    const projectsContainer = document.getElementById("projects");
+    
+    data.forEach(project => {
+      const projectDiv = document.createElement("div");
+      projectDiv.classList.add("job", "mb-6", "pb-6", "border-b-[#d3d3d3]", "border-b", "border-solid", "sm:flex", "sm:justify-between", "sm:gap-8", "w-[100%]");
+
+      projectDiv.innerHTML = `
+        <div class="job-title-container md:flex-col flex-row flex justify-between text-lg mb-5 sm:w-[25%]">
+          <div>
+            <div class="job-company font-bold leading-[1.2]">${project.name}</div>
+          </div>
+        </div> 
+
+        <ul class="list-disc sm:w-[75%]">
+          <li>${project.resume}</li>
+          <li>Source Code: <a href="${project.source_code}" class="no-underline text-main dark:text-slate-50 hover:underline" target="_blank">View Project</a></li>
+          <li>Required Skills: ${project.required_skills.join(', ')}</li>
+        </ul>
+      `;
+
+      projectsContainer.appendChild(projectDiv);
+    });
+  })
+  .catch(error => console.error("Error fetching data:", error));
