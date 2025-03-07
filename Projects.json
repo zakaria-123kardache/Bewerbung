@@ -1,0 +1,21 @@
+[
+    {
+      "name": "Youdemy",
+      "resume": "La plateforme de cours en ligne Youdemy vise à révolutionner l’apprentissage en proposant un système interactif et personnalisé pour les étudiants et les enseignants",
+      "source_code": "Private / Propriatary",
+      "required_skills": ["HTML5", "PHP ", "bootstrap", "MySQL ", "JavaScript", "CSS3 " ,"UML"]
+    },
+    {
+      "name": "BiblioSchool",
+      "resume": "Une application web pour gérer une bibliothèque scolaire, incluant un système de réservation de livres de diverses collections ",
+      "source_code": "https://github.com/zakaria-123kardache/Arbeitsmappe.git",
+      "required_skills": ["js", "html", "bootstrap", "css", "php", "mvc"]
+    },
+    {
+      "name": "FUT Champions",
+      "resume": "Une application web de gestion d'équipe Ultimate Team pour EA FC 25, permettant aux utilisateurs de créer, personnaliser et gérer leurs formations tactiques et équipes de joueurs via une interface interactive.",
+      "source_code": "https://github.com/zakaria-123kardache/Arbeitsmappe.git",
+      "required_skills": ["js", "html", "bootstrap", "css", "php", "mvc"]
+    }
+  ]
+  
