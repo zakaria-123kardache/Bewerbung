@@ -1,21 +1,40 @@
 [
     {
-      "name": "Youdemy",
-      "resume": "La plateforme de cours en ligne Youdemy vise à révolutionner l’apprentissage en proposant un système interactif et personnalisé pour les étudiants et les enseignants",
-      "source_code": "Private / Propriatary",
-      "required_skills": ["HTML5", "PHP ", "bootstrap", "MySQL ", "JavaScript", "CSS3 " ,"UML"]
+      "name": "YouShope",
+      "resume": "Application E-commerce de Gestion de produits, de paniers, de commandes et de paiements en ligne.",
+      "source_code": "https://github.com/zakaria-123kardache/YouShope.git",
+      "status": "Continuement mis à jour / En développement",
+      "required_skills": ["Laravel9", "PHP8", "bootstrap", "MySQL ", "JavaScript", "CSS3" ,"UML","ORM design"]
     },
     {
       "name": "BiblioSchool",
-      "resume": "Une application web pour gérer une bibliothèque scolaire, incluant un système de réservation de livres de diverses collections ",
-      "source_code": "https://github.com/zakaria-123kardache/Arbeitsmappe.git",
-      "required_skills": ["js", "html", "bootstrap", "css", "php", "mvc"]
+      "resume": "Application web pour la gestion d'une bibliothèque scolaire ",
+      "source_code": "Private / Propriatary",
+      "status": "Continuement mis à jour / En développement",
+      "required_skills": ["PHP8", "MYSQL", "bootstrap", "SQL ", "JavaScript", "CSS3" ,"UML","design/architectural patterns"]
+    },
+    {
+      "name": "MindMemory",
+      "Live_Platform": "mind-memory-seven.vercel.app",
+      "resume": "Création d'un jeu de mémoire classique",
+      "source_code": "https://github.com/zakaria-123kardache/MindMemory.git",
+      "status": "Terminer",
+      "required_skills": ["JS", "HTML5 ", "CSS3"]
+    },
+    {
+      "name": "Contactify",
+      "resume": "Application web de gestion des contacts",
+      "source_code": "https://github.com/zakaria-123kardache/Contactify.git",
+      "status": "Terminer",
+      "required_skills": ["PHP8", "MySQL", "bootstrap", "OOP", "MVC patterns", "SQL"]
     },
     {
       "name": "FUT Champions",
+      "Live_Platform": "fut-champions-one.vercel.app",
       "resume": "Une application web de gestion d'équipe Ultimate Team pour EA FC 25, permettant aux utilisateurs de créer, personnaliser et gérer leurs formations tactiques et équipes de joueurs via une interface interactive.",
-      "source_code": "https://github.com/zakaria-123kardache/Arbeitsmappe.git",
-      "required_skills": ["js", "html", "bootstrap", "css", "php", "mvc"]
+      "source_code": "https://github.com/zakaria-123kardache/FUT_Champions.git",
+      "status": "Terminer",
+      "required_skills": ["JS", "HTML5", "bootstrap", "css3 nativ", "JSON"]
     }
   ]
-  
+ 

@@ -1,10 +1,9 @@
 [
     {
-      "title": "The MVC framework architecture",
-      "description": "This guide provides a step-by-step tutorial on setting up a PHP project with MVC, including configuring a database connection using Singleton and PDO, creating and utilizing environment variables, and building a custom routing system from scratch.",
-      "link": "https://medium.com/@kardasch/mvc-model-view-controller-c324c5a150b5",
-      "date": "Feb 2, 2025",
-      "author": "Me | Coding"
+        "title": "MVC Framework",
+        "description": "Ce guide propose un tutoriel détaillé, étape par étape, sur la mise en place d'un projet PHP avec MVC, y compris la configuration d'une connexion à une base de données en utilisant Singleton et PDO, l'utilisation de variables d'environnement et la création d'un système de routage personnalisé à partir de zéro.",
+        "link": "https://medium.com/@kardasch/mvc-model-view-controller-c324c5a150b5",
+        "date": "2 février 2025",
+        "author": "Moi | Coding"
     }
-  ]
-  
+]

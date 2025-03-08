@@ -1,14 +1,15 @@
 [
-    {
-      "employer": "Clinique Al Fourate",
-      "job_title": "pfelegefachmann",
-      "date": "Apr 2024 - Jul 2024",
-      "description": [
-        "Blutzucker & Blutdruck messen",
-        "Wundversorgung & Verbände",
-        "Paramedizinische Produkte",
-        "Patientenkontakt & Pflege"
-      ]
-    }
-  ]
+  {
+    "employer": "Clinique Al Fourate",
+    "job_title": "Infirmier",
+    "date": "Apr 2024 - Jul 2024",
+    "description": [
+      "Mesure de la glycémie et de la tension artérielle",
+      "Soins des plaies et pansements",
+      "Produits paramédicaux",
+      "Contact avec les patients et soins"
+    ]
+  }
+  
+]
   
