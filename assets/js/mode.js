@@ -39,9 +39,10 @@ const toggleTheme = () => {
 
 
 const updateThemeUI = () => {
-  updateThemeIcon();
-  updateHobbyIcons();
-};
+    updateThemeIcon();
+    fetchInterests(); 
+  };
+  
 
 
 const updateThemeIcon = () => {
