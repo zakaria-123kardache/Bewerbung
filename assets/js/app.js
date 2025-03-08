@@ -74,6 +74,7 @@ fetch('projects.json')
         <ul class="list-disc sm:w-[75%]">
           <li>${project.resume}</li>
           <li>Source Code: <a href="${project.source_code}" class="no-underline text-main dark:text-slate-50 hover:underline" target="_blank">View Project</a></li>
+          <li>status: ${project.status}</li>
           <li>Required Skills: ${project.required_skills.join(', ')}</li>
         </ul>
       `;
