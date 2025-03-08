@@ -82,3 +82,40 @@ fetch('projects.json')
     });
   })
   .catch(error => console.error("Error fetching data:", error));
+
+
+//   fetch interests
+
+fetch('interests.json')
+  .then(res => res.json())
+  .then(data => {
+    const interestsContainer = document.getElementById("interests");
+
+    interestsContainer.innerHTML = data.map(interest => `
+      <img width="60" height="60" src="${interest.src}" alt="${interest.alt}" class="md:mr-auto md:mb-auto mr-8 mb-4 hobby-icon"/>
+    `).join('');
+  })
+  .catch(error => console.error("Error fetching interests:", error));
+
+
+//   fetch skills
+
+fetch('skills.json')
+  .then(res => res.json())
+  .then(data => {
+    const skillsContainer = document.getElementById("skills");
+    const columnSize = 4; 
+    let skillsHTML = "";
+
+    for (let i = 0; i < data.length; i += columnSize) {
+      const column = data.slice(i, i + columnSize); 
+      skillsHTML += `
+        <ul class="list-disc ml-5">
+          ${column.map(skill => `<li>${skill}</li>`).join('')}
+        </ul>
+      `;
+    }
+
+    skillsContainer.innerHTML = skillsHTML;
+  })
+  .catch(error => console.error("Error fetching skills:", error));
