@@ -119,3 +119,34 @@ fetch('skills.json')
     skillsContainer.innerHTML = skillsHTML;
   })
   .catch(error => console.error("Error fetching skills:", error));
+
+
+//   fetching artikles
+
+fetch('articles.json')
+  .then(res => res.json())
+  .then(data => {
+    const articlesContainer = document.getElementById("articles");
+
+    data.forEach(article => {
+      const articleDiv = document.createElement("div");
+      articleDiv.classList.add("job", "mb-6", "pb-6", "border-b", "border-solid", "border-b-[#d3d3d3]", "sm:flex", "sm:justify-between", "sm:gap-8", "w-[100%]");
+
+      articleDiv.innerHTML = `
+        <div class="job-title-container md:flex-col flex-row flex justify-between text-lg mb-5 sm:w-[25%]">
+          <div>
+            <div class="job-company font-bold leading-[1.2]">${article.title}</div>
+            <div class="job-title">${article.author}</div>
+            <div>${article.date}</div>
+          </div>
+        </div>
+        <ul class="list-disc sm:w-[75%]">
+          <li>${article.description}</li>
+          <li>Read article: <a href="${article.link}" class="text-main dark:text-slate-50 hover:underline" target="_blank">Click here</a></li>
+        </ul>
+      `;
+      
+      articlesContainer.appendChild(articleDiv);
+    });
+  })
+  .catch(error => console.error("Error fetching articles:", error));
