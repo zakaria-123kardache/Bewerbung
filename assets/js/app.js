@@ -96,3 +96,26 @@ fetch('interests.json')
     `).join('');
   })
   .catch(error => console.error("Error fetching interests:", error));
+
+
+//   fetch skills
+
+fetch('skills.json')
+  .then(res => res.json())
+  .then(data => {
+    const skillsContainer = document.getElementById("skills");
+    const columnSize = 4; 
+    let skillsHTML = "";
+
+    for (let i = 0; i < data.length; i += columnSize) {
+      const column = data.slice(i, i + columnSize); 
+      skillsHTML += `
+        <ul class="list-disc ml-5">
+          ${column.map(skill => `<li>${skill}</li>`).join('')}
+        </ul>
+      `;
+    }
+
+    skillsContainer.innerHTML = skillsHTML;
+  })
+  .catch(error => console.error("Error fetching skills:", error));
