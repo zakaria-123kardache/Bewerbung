@@ -28,7 +28,13 @@
             alt="sun--v1"
             class="cursor-pointer theme-changer hobby-icon"
           />
-          <!-- <img width="20" height="20" src="https://img.icons8.com/ios-filled/20/323232/language.png" alt="language" class="cursor-pointer language-changer hobby-icon languageToggler"/> -->
+          <img
+            width="20"
+            height="20"
+            src="https://img.icons8.com/ios-filled/20/323232/language.png"
+            alt="language"
+            class="cursor-pointer language-changer hobby-icon languageToggler"
+          />
         </div>
         <div>
           <img
@@ -41,7 +47,10 @@
           <div class="my-name leading-[3.8rem] text-[48px]">
             KARDACHE Zakaria
           </div>
-          <div class="my-title text-sub text-[24px] text-bold dark:text-r">
+          <div
+            class="my-title text-sub text-[24px] text-bold dark:text-dark_color"
+            data-translate="job_title"
+          >
             Full Stack Web Developer
           </div>
           <div class="links flex mt-2.5 mb-5 mx-0 md:flex-row flex-col">
@@ -98,7 +107,11 @@
           <!-- end links -->
 
           <p data-translate="about_me">
-            Développeur Full Stack passionné, compétent en Javascript et PHP. Expérience dans la conception de solutions évolutives et haute quelité. Joueur d'équipe collaboratif. Reste à jour avec les technologies émergentes. Avide de contribuer, résoudre des défis complexes et de générer des résultats impactants.
+            Développeur Full Stack passionné, compétent en Javascript et PHP.
+            Expérience dans la conception de solutions évolutives et haute
+            quelité. Joueur d'équipe collaboratif. Reste à jour avec les
+            technologies émergentes. Avide de contribuer, résoudre des défis
+            complexes et de générer des résultats impactants.
           </p>
         </div>
       </section>
@@ -106,7 +119,7 @@
       <section
         class="grid md:grid-cols-[1fr_4fr] grid-cols-1 gap-5 px-0 py-6 border-b-[#d3d3d3] border-b border-solid"
       >
-        <div class="section-title font-bold">Skills</div>
+        <div class="section-title font-bold" data-translate="skills">Skills</div>
         <div>
           <div
             class="skills-container grid md:grid-cols-[1fr_1fr_1fr_1fr] grid-cols-[1fr_1fr] gap-5"
@@ -119,7 +132,12 @@
       <section
         class="grid md:grid-cols-[1fr_4fr] grid-cols-1 gap-5 px-0 pt-6 border-b-[#d3d3d3] border-b border-solid"
       >
-        <div class="section-title font-bold text-[18px]">Projects</div>
+        <div
+          class="section-title font-bold text-[18px]"
+          data-translate="projects"
+        >
+          Projects
+        </div>
         <div>
           <div id="projects"></div>
         </div>
@@ -129,16 +147,23 @@
       <section
         class="grid md:grid-cols-[1fr_4fr] grid-cols-1 gap-5 px-0 py-6 border-b-[#d3d3d3] border-b border-solid"
       >
-        <div class="section-title font-bold">Education</div>
+        <div class="section-title font-bold" data-translate="education">
+          Education
+        </div>
         <div>
           <div id="education"></div>
         </div>
       </section>
-      <!-- start Education -->
+      <!-- end Education -->
       <section
         class="grid md:grid-cols-[1fr_4fr] grid-cols-1 gap-5 px-0 pt-6 border-b-[#d3d3d3] border-b border-solid"
       >
-        <div class="section-title font-bold text-[18px]">Experience</div>
+        <div
+          class="section-title font-bold text-[18px]"
+          data-translate="experience"
+        >
+          Experience
+        </div>
         <div>
           <!-- start erfarung -->
           <div id="experience"></div>
@@ -149,21 +174,25 @@
       <section
         class="grid md:grid-cols-[1fr_4fr] grid-cols-1 gap-5 px-0 py-6 border-b-[#d3d3d3] border-b border-solid w-[100%]"
       >
-        <div class="section-title font-bold">Languages</div>
+        <div class="section-title font-bold" data-translate="languages">
+          Languages
+        </div>
         <ul
           class="languages-container list-disc ml-5 justify-between w-[100%] grid md:grid-cols-[1fr_1fr_1fr_1fr] grid-cols-[1fr_1fr]"
         >
-          <li>English: B2</li>
-          <li>French: Fluent</li>
-          <li>German: B2</li>
-          <li>Arabic: Native</li>
+          <li data-translate="english">English: B1</li>
+          <li data-translate="french">French: Fluent</li>
+          <li data-translate="german">German: B2</li>
+          <li data-translate="arabic">Arabic: Native</li>
         </ul>
       </section>
 
       <section
         class="grid md:grid-cols-[1fr_4fr] grid-cols-1 gap-5 px-0 py-6 border-b-[#d3d3d3] border-b border-solid"
       >
-        <div class="section-title font-bold">Interests</div>
+        <div class="section-title font-bold" data-translate="interests">
+          Interests
+        </div>
         <div
           class="interests-container flex md:justify-between md:flex-nowrap justify-start flex-wrap"
           id="interests"
@@ -172,7 +201,12 @@
       <section
         class="grid md:grid-cols-[1fr_4fr] grid-cols-1 gap-5 px-0 pt-6 border-b-[#d3d3d3] border-b border-solid"
       >
-        <div class="section-title font-bold text-[18px]">Articles</div>
+        <div
+          class="section-title font-bold text-[18px]"
+          data-translate="articles"
+        >
+          Articles
+        </div>
         <div>
           <!-- start articles -->
           <div id="articles"></div>
@@ -182,5 +216,6 @@
     </div>
     <script src="assets/js/app.js"></script>
     <script src="assets/js/mode.js"></script>
+    <script src="assets/js/translate.js"></script>
   </body>
 </html>
