@@ -10,7 +10,7 @@ const translations = {
     articles: "Articles",
     projects: "Projects",
     english: "English: B1",
-    french: "French: Fluent",
+    french: "French: B1",
     german: "German: B2",
     arabic: "Arabic: Native",
     experience_data: [
@@ -29,18 +29,21 @@ const translations = {
     education_data: [
       {
         school: "YouCode UM6P",
+        school_url: "https://youcode.ma",
         job_title: "Developer Program",
         date: "Sep 2024 - Aug 2025",
         description: "Recognizing the value of continuous learning, I enrolled in the program to refine my skills, take advantage of the structured curriculum and engage with senior mentors, which fortified my foundation in software engineering."
       },
       {
         school: "Hassan II University",
+        school_url: "https://www.uh2c.ac.ma",
         job_title: "Faculty of Sciences Ben M'sik",
         date: "Sep 2021 - Jul 2022",
         description: "During my studies, I gained a deep understanding of programming fundamentals, C language basics, algorithms, and binary systems, forming a solid foundation for my career in software development."
       },
       {
         school: "OMAR AL KHAYYAM High School",
+        school_url: "#",
         job_title: "International Mathematics Specialization",
         date: "Jul 2021",
         description: "Option: French, successfully completed"
@@ -104,7 +107,7 @@ const translations = {
     articles: "Articles",
     projects: "Projets",
     english: "Anglais: B1",
-    french: "Français: Courant",
+    french: "Français: B1",
     german: "Allemand: B2",
     arabic: "Arabe: Natif",
     experience_data: [
@@ -123,18 +126,21 @@ const translations = {
     education_data: [
       {
         school: "YouCode UM6P",
+        school_url: "https://youcode.ma",
         job_title: "Programme Développeur",
         date: "Sep 2024 - Août 2025",
-        description: "Reconnaissant la valeur de l'apprentissage continu, je me suis inscrit au programme structuréde pour perfectionner mes compétences et échanger avec des mentors seniors, renforçant ainsi ma base en ingénierie logicielle."
+        description: "Reconnaissant la valeur de l'apprentissage continu, je me suis inscrit au programme structuré pour perfectionner mes compétences et échanger avec des mentors seniors, renforçant ainsi ma base en ingénierie logicielle."
       },
       {
         school: "Université Hassan II",
+        school_url: "https://www.uh2c.ac.ma",
         job_title: "Faculté des Sciences Ben M'sik",
         date: "Sep 2021 - Juil 2022",
         description: "Pendant mes études, j'ai acquis une compréhension approfondie des principes fondamentaux de la programmation, ainsi que des bases du langage C, de l'algorithmique et du système binaire, constituant une base solide pour mon parcours en développement logiciel."
       },
       {
         school: "Lycée OMAR AL KHAYYAM",
+        school_url: "#",
         job_title: "Filière : Spécialisation Internationale en Mathématiques",
         date: "Juil 2021",
         description: "Option : Français, réussi avec succès"
@@ -198,7 +204,7 @@ const translations = {
     articles: "Artikel",
     projects: "Projekte",
     english: "Englisch: B1",
-    french: "Französisch: Fließend",
+    french: "Französisch: B1",
     german: "Deutsch: B2",
     arabic: "Arabisch: Muttersprache",
     experience_data: [
@@ -217,18 +223,21 @@ const translations = {
     education_data: [
       {
         school: "YouCode UM6P",
+        school_url: "https://youcode.ma",
         job_title: "Entwicklerprogramm",
         date: "Sep 2024 - Aug 2025",
         description: "Im Bewusstsein der Bedeutung kontinuierlichen Lernens habe ich an diesem Programm teilgenommen, um meine Fähigkeiten zu verfeinern und von strukturiertem Unterricht sowie erfahrenen Mentoren zu profitieren, was meine Grundlagen in der Softwareentwicklung gestärkt hat."
       },
       {
         school: "Universität Hassan II",
+        school_url: "https://www.uh2c.ac.ma",
         job_title: "Fakultät für Wissenschaften Ben M'sik",
         date: "Sep 2021 - Jul 2022",
         description: "Während meines Studiums habe ich ein tiefes Verständnis der Programmiergrundlagen sowie der C-Sprache, Algorithmen und Binärsysteme erworben, was eine solide Basis für meine Karriere im Softwarebereich bildet."
       },
       {
         school: "Gymnasium OMAR AL KHAYYAM",
+        school_url: "#",
         job_title: "Fachrichtung: Internationale Mathematik",
         date: "Jul 2021",
         description: "Option: Französisch, erfolgreich abgeschlossen"
@@ -284,11 +293,10 @@ const translations = {
 };
 
 const languagesArray = ["EN", "FR", "DE"];
-let languageIndex = 0; 
+let languageIndex = 0;
 
 const updateContent = (language) => {
   const data = translations[language];
-
   const toTranslate = document.querySelectorAll("[data-translate]");
   toTranslate.forEach((translate) => {
     const key = translate.getAttribute("data-translate");
@@ -315,7 +323,6 @@ const updateContent = (language) => {
     experienceContainer.appendChild(jobDiv);
   });
 
-
   const educationContainer = document.getElementById("education");
   educationContainer.innerHTML = "";
   data.education_data.forEach(edu => {
@@ -324,7 +331,7 @@ const updateContent = (language) => {
     eduDiv.innerHTML = `
       <div class="job-title-container md:flex-col flex-row flex justify-between text-lg mb-3">
         <div>
-          <div class="job-company font-bold leading-[1.2]">${edu.school}</div>
+          <div class="job-company font-bold leading-[1.2]"><a href="${edu.school_url}" target="_blank">${edu.school}</a></div>
           <div class="job-title">${edu.job_title}</div>
         </div>
         <div>${edu.date}</div>
@@ -333,7 +340,6 @@ const updateContent = (language) => {
     `;
     educationContainer.appendChild(eduDiv);
   });
-
 
   const projectsContainer = document.getElementById("projects");
   projectsContainer.innerHTML = "";
@@ -355,7 +361,6 @@ const updateContent = (language) => {
     `;
     projectsContainer.appendChild(projectDiv);
   });
-
 
   const articlesContainer = document.getElementById("articles");
   articlesContainer.innerHTML = "";
@@ -379,14 +384,25 @@ const updateContent = (language) => {
   });
 };
 
-
 const handleTranslation = () => {
-  languageIndex = (languageIndex + 1) % languagesArray.length; 
+  languageIndex = (languageIndex + 1) % languagesArray.length;
   updateContent(languagesArray[languageIndex]);
 };
-
+const fetchInterests = () => {
+  const file = document.body.classList.contains("dark") ? "interests-dark.json" : "interests-light.json";
+  fetch(file)
+    .then(res => res.json())
+    .then(data => {
+      const interestsContainer = document.getElementById("interests");
+      interestsContainer.innerHTML = data.map(interest => `
+        <img width="60" height="60" src="${interest.src}" alt="${interest.alt}" class="md:mr-auto md:mb-auto mr-8 mb-4 hobby-icon"/>
+      `).join('');
+    })
+    .catch(error => console.error("Error fetching interests:", error));
+};
 document.addEventListener("DOMContentLoaded", () => {
   updateContent(languagesArray[languageIndex]); 
+
   const languageToggler = document.querySelector(".languageToggler");
   if (languageToggler) {
     languageToggler.addEventListener("click", handleTranslation);
@@ -410,17 +426,13 @@ document.addEventListener("DOMContentLoaded", () => {
     })
     .catch(error => console.error("Error fetching skills:", error));
 
-  const fetchInterests = () => {
-    const file = document.body.classList.contains("dark") ? "interests-dark.json" : "interests-light.json";
-    fetch(file)
-      .then(res => res.json())
-      .then(data => {
-        const interestsContainer = document.getElementById("interests");
-        interestsContainer.innerHTML = data.map(interest => `
-          <img width="60" height="60" src="${interest.src}" alt="${interest.alt}" class="md:mr-auto md:mb-auto mr-8 mb-4 hobby-icon"/>
-        `).join('');
-      })
-      .catch(error => console.error("Error fetching interests:", error));
-  };
   fetchInterests();
+
+  const themeToggler = document.querySelector(".themeToggler"); 
+  if (themeToggler) {
+    themeToggler.addEventListener("click", () => {
+      document.body.classList.toggle("dark"); 
+      fetchInterests(); 
+    });
+  }
 });
