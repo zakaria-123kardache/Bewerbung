@@ -1,0 +1,23 @@
+[
+    {
+      "school": "YouCode UM6P",
+      "school_url": "https://www.youcode.ma/",
+      "job_title": "Developer Program",
+      "date": "Sep 2024 - Aug 2025",
+      "description": "Conscient de l'importance de l'apprentissage continu, j'ai intégré ce programme afin d'affiner mes compétences, de bénéficier d'un enseignement structuré et d'échanger avec des mentors expérimentés, ce qui a renforcé mes bases en ingénierie logicielle."
+    },
+    {
+      "school": "Université Hassan II",
+      "school_url": "https://www.youcode.ma/",
+      "job_title": "https://www.fsb.univh2c.ma/",
+      "date": "Sep 2021 - Jul 2022",
+      "description": "Pendant mes études à la Faculté des Sciences Ben M'sik, j'ai acquis une compréhension approfondie des principes fondamentaux de la programmation, ainsi que des bases du langage C, de l'algorithmique et du système binaire. Ces connaissances ont constitué un socle essentiel pour mon parcours en informatique et en développement logiciel"
+    },
+    {
+      "school": "Lycee OMAR AL KHAYYAM",
+      "job_title": "Filière : Spécialisation Internationale en Mathématiques",
+      "date": "Jul 2021 ",
+      "description": "Option : Français, réussi avec succès"
+    }
+  ]
+  

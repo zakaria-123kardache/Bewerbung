@@ -1,0 +1,9 @@
+[
+    {
+        "title": "MVC Framework",
+        "description": "Ce guide propose un tutoriel détaillé, étape par étape, sur la mise en place d'un projet PHP avec MVC, y compris la configuration d'une connexion à une base de données en utilisant Singleton et PDO, l'utilisation de variables d'environnement et la création d'un système de routage personnalisé à partir de zéro.",
+        "link": "https://medium.com/@kardasch/mvc-model-view-controller-c324c5a150b5",
+        "date": "2 février 2025",
+        "author": "Moi | Coding"
+    }
+]
