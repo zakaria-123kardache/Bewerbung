@@ -12,12 +12,12 @@ fetch('experience.json')
         <div class="job-title-container md:flex-col flex-row flex justify-between text-lg mb-5 sm:w-[25%]">
           <div>
             <div class="job-company font-bold leading-[1.2]">${job.employer}</div>
-            <div class="job-title">${job.job_title}</div>
-            <div>${job.date}</div>
+            <div class="job-title" data-translate="position_title">${job.job_title}</div>
+            <div data-translate="position_date">${job.date}</div>
           </div>
         </div>
         <ul class="list-disc sm:w-[75%]">
-          ${job.description.map(task => `<li>${task}</li>`).join('')}
+          ${job.description.map(task => `<li data-translate="position_phrase">${task}</li>`).join('')}
         </ul>
       `;
                experienceContainer.appendChild(jobDiv);
