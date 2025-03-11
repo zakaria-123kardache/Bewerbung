@@ -1,4 +1,4 @@
-# Resume - Kardache Zakaria
+# Resume - KARDACHE Zakaria
 
 ## About
 
