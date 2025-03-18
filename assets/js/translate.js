@@ -238,7 +238,7 @@ const translations = {
       {
         school: "Gymnasium OMAR AL KHAYYAM",
         school_url: "#",
-        job_title: "Fachrichtung: Internationale Mathematik",
+        job_title: "Fachrichtung: Internationale Mathematik Abitur",
         date: "Jul 2021",
         description: "Option: Französisch, erfolgreich abgeschlossen"
       }
